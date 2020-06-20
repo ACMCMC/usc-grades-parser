@@ -2,9 +2,13 @@ import pdftotext
 import re
 import csv
 import statistics
+import sys
 
-print("Introduzca el nombre del archivo:")
-nombre_arch = input()
+if len(sys.argv) == 1:
+    print("Introduzca el nombre del archivo:")
+    nombre_arch = input()
+else:
+    nombre_arch = sys.argv[1]
 
 if nombre_arch == "":
     nombre_arch = "target"
