@@ -54,8 +54,6 @@ lista_directorio = next(os.walk(os.getcwd()))[1] #Listamos los subdirectorios in
 lista_directorio = list(filter(lambda x: x[0] != '.', lista_directorio)) #Eliminamos los directorios que empiezan por '.'; p. ej, ".git"
 lista_paths = [] #Aún no sabemos el/los nombre(s) de nuestro(s) archivo(s)
 
-print(lista_directorio)
-
 if len(sys.argv) == 2:
     lista_paths = [sys.argv[1]]
 elif len(lista_directorio) > 0:
