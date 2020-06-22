@@ -49,14 +49,15 @@ def parse_arch(path_archivo):
         csv_writer.writerows(zip(apellidos, nombres, notas))
 
     # Calculamos parámetros estadísticos
-    nombres_parametros = ["media", "mediana"]
-    valores_parametros = [mean(notas), median(notas)]
-    parametros = zip(nombres_parametros, valores_parametros)
+    parametros = {
+        "total de presentados": len(notas),
+        "media": mean(notas),
+        "mediana": median(notas)}
     with open("INFORME.txt", 'a') as archivo_informe:
         archivo_informe.write(
             nombre_materia + " [" + codigo_materia + "] (" + tipo_listaxe.upper() + "):\n\t")
         archivo_informe.writelines("\n\t".join(
-            list(map(lambda x: ": ".join((x[0], str(x[1]))), parametros))))
+            list(map(lambda item: ": ".join((item[0], str(item[1]))), parametros.items()))))
         archivo_informe.write("\n\n")
 
 
