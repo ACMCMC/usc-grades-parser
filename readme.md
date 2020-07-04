@@ -1,7 +1,7 @@
 # usc-grades-parser
 ## [EN]
 ## Python 3 script to automatically obtain statistical measures from grades PDFs from the USC
-This script starts taking a set of PDF grades documents from the University of Santiago de Compostela (provisional or definitive grades), whose names are specified at runtime, and parses the documents to get statistical measures from them (mean, median). Additionally, it saves the grades on CSV files (named after the sujects' codes), for them to be used with other programs. It also creates a final report of results.
+This script starts taking a set of PDF grades documents from the University of Santiago de Compostela (provisional or definitive grades), whose names are specified at runtime, and parses the documents to get statistical measures from them (mean, median). Additionally, it saves the grades on CSV files (named after the subjects' codes), for them to be used with other programs. It also creates a final report of results.
 
 ---
 
