@@ -5,6 +5,7 @@ import sys
 import os
 from statistics import mean, median
 
+#TODO: Añadir soporte para formatos de notas no estándares
 
 def parse_arch(path_archivo):
     with open(path_archivo, "rb") as f:
