@@ -1,3 +1,5 @@
+![C CI](https://github.com/ACMCMC/usc-grades-parser/workflows/Lint%20and%20test%20Python/badge.svg)
+
 # usc-grades-parser
 ## [EN]
 ## Python 3 script to automatically obtain statistical measures from grades PDFs from the USC
