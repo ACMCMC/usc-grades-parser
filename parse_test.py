@@ -1,5 +1,5 @@
 import pytest
 import parse
 
-def test_parse:
+def test_parse():
   assert true
