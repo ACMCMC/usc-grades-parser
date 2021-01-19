@@ -5,7 +5,9 @@ import sys
 import os
 from statistics import mean, median
 
-#TODO: Añadir soporte para formatos de notas no estándares
+# coding=utf-8
+
+#TODO: Anadir soporte para formatos de notas no estandares
 
 def parse_arch(path_archivo):
     with open(path_archivo, "rb") as f:
@@ -42,7 +44,7 @@ def parse_arch(path_archivo):
         lambda tupla: True if tupla[0] not in no_presentados else False, enumerate(apellidos))))
     #[nombres[index_nombre] for index_nombre in range(nombres) if index_nombre not in no_presentados]
 
-    with open(os.path.dirname(path_archivo) + "/" + tipo_listaxe.upper() + "_" + codigo_materia + ".csv", mode='w', newline='') as arch_csv:
+    with open(os.path.dirname(os.path.abspath(path_archivo)) + "/" + tipo_listaxe.upper() + "_" + codigo_materia + ".csv", mode='w', newline='') as arch_csv:
         csv_writer = csv.writer(arch_csv, delimiter=';',
                                 quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
